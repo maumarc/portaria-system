@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Portaria System</title>
+    <meta charset="utf-8">
+    <!-- <meta name="viewport" content="'width=device-width, initial-scale=1'"> -->
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="shortcut icon" href="images/logo.png" />
+    <script src="https://kit.fontawesome.com/67f717a374.js"></script>
+</head>
+
+<body>
+    <section class="login">
+
+        <div class="row">
+            <div class="container">
+                <div class="col-md-12 dflexAICenter">
+                    <a href="" class="login__link"><img src="images/logo.png" alt="" class="login__link__img"></a>
+                    <h2 class="login__h2">Portaria System</h2>
+                    <form action="" class="login__form">
+                        <input type="text" placeholder="Nome" name="name" class="login__form__input">
+                        <input type="email" placeholder="E-mail" name="email" class="login__form__input">
+                        <a href="dashboard.html" class="login__form__link">Acessar</a>
+                    </form>
+                    <small class="login__small">2019 - Todos os direitos reservados</small>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</body>
+
+
+<script src="./js/jquery-3.3.1.min.js"></script>
+<script src="./js/slick.js"></script>
+<script type="text/javascript">
+    $('.divPai1').slick({
+        dots: false,
+        arrows: true,
+        autoplay: false,
+        vertical: true,
+        verticalSwiping: true,
+        nextArrow: $('.arrowUp'),
+        prevArrow: $('.arrowDown'),
+        asNavFor: '.quarterResults',
+    });
+
+    $('.quarterResults').slick({
+        dots: false,
+        arrows: false,
+        autoplay: false,
+        vertical: true,
+        verticalSwiping: true,
+        asNavFor: '.divPai1',
+        //autoplaySpeed: 2000,
+    });
+</script>
+<script src="./js/main.js"></script>
+
+</html>

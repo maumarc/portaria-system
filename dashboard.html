@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dashboard - Portaria System</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="'width=device-width, initial-scale=1'">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="shortcut icon" href="images/logo.png" />
+    <script src="https://kit.fontawesome.com/67f717a374.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="header__nav">
+            <ul class="header__nav__ul">
+                <li class="header__nav__ul__li">
+                    <a href="index.html" class="header__nav__ul__li__link">Portaria System</a>
+                </li>
+                <li class="header__nav__ul__li">
+                    <input type="text" name="search" placeholder="Search" class="header__nav__ul__li__input">
+                </li>
+                <li class="header__nav__ul__li">
+                    <a href="index.html" class="header__nav__ul__li__link">Sair do Sistema</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="dashboard">
+        <div class="dashboard__sidebar">
+            <small class="dashboard__welcome">Bem vindo(a) Fulano!</small>
+            <nav class="dashboard__sidebar__nav">
+                <ul class="dashboard__sidebar__nav__ul">
+                    <li class="dashboard__sidebar__nav__ul__li">
+                        <a href="" class="dashboard__sidebar__nav__ul__li__link">Dashboard</a>
+                    </li>
+                    <li class="dashboard__sidebar__nav__ul__li">
+                        <a href="" class="dashboard__sidebar__nav__ul__li__link">Novo Contato</a>
+                    </li>
+                    <li class="dashboard__sidebar__nav__ul__li">
+                        <a href="" class="dashboard__sidebar__nav__ul__li__link">Todos os Cadastros</a>
+                    </li>
+                    <li class="dashboard__sidebar__nav__ul__li">
+                        <a href="" class="dashboard__sidebar__nav__ul__li__link">Pesquisar Cadastro</a>
+                    </li>
+                    <li class="dashboard__sidebar__nav__ul__li">
+                        <a href="" class="dashboard__sidebar__nav__ul__li__link">Entrada</a>
+                    </li>
+                    <li class="dashboard__sidebar__nav__ul__li">
+                        <a href="" class="dashboard__sidebar__nav__ul__li__link">Saída</a>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="dashboard__secondList">
+                <ul class="dashboard__secondList__ul">
+                    <li class="dashboard__secondList__ul__li">
+                        <a href="" class="dashboard__secondList__ul__li__link">Relatórios</a>
+                    </li>
+                    <li class="dashboard__secondList__ul__li">
+                        <a href="" class="dashboard__secondList__ul__li__link">Entrada/Saída</a>
+                    </li>
+                    <li class="dashboard__secondList__ul__li">
+                        <a href="" class="dashboard__secondList__ul__li__link">Relatório do Dia</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="container ml-6">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="dashboard__h3">Entradas/Saídas</h3>
+                </div>
+                <div class="col-md-4 alignCenter">
+                    <button class="dashboard__btn verde">Registrar Entrada</button>
+                </div>
+                <div class="col-md-4 alignCenter">
+                    <button class="dashboard__btn azul">Registrar Saída</button>
+                </div>
+                <div class="col-md-4 alignCenter">
+                    <button class="dashboard__btn azulClaro">Entradas/Saídas</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="dashboard__h3">Usuários</h3>
+                </div>
+                <div class="col-md-4 alignCenter">
+                    <a href="cadastro.html"><button class="dashboard__btn vermelho">Novo Cadastro</button></a>
+                </div>
+                <div class="col-md-4 alignCenter">
+                    <button class="dashboard__btn laranja">Todos os Cadastros</button>
+                </div>
+                <div class="col-md-4 alignCenter">
+                    <button class="dashboard__btn azulClaro">Pesquisar Cadastros</button>
+                </div>
+            </div>
+            <h4 class="dashboard__h4">Últimos 5 usuários cadastrados.</h4>
+            <table class="dashboard__table">
+                <thead class="dashboard__table__thead">
+                    <tr class="dashboard__table__thead__tr">
+                        <th class="dashboard__table__thead__tr__th">ID</th>
+                        <th class="dashboard__table__thead__tr__th">Matrícula</th>
+                        <th class="dashboard__table__thead__tr__th">Nome</th>
+                        <th class="dashboard__table__thead__tr__th">Identidade</th>
+                        <th class="dashboard__table__thead__tr__th">Placa</th>
+                    </tr>
+                </thead>
+                <tbody class="dashboard__table__tbody">
+                    <tr class="dashboard__table__tbody__tr">
+                        <td class="dashboard__table__tbody__tr__td">8</td>
+                        <td class="dashboard__table__tbody__tr__td">5342</td>
+                        <td class="dashboard__table__tbody__tr__td">Adelmole</td>
+                        <td class="dashboard__table__tbody__tr__td">5555</td>
+                        <td class="dashboard__table__tbody__tr__td">TRY-2424</td>
+                    </tr>
+                    <tr class="dashboard__table__tbody__tr">
+                        <td class="dashboard__table__tbody__tr__td">7</td>
+                        <td class="dashboard__table__tbody__tr__td">6474</td>
+                        <td class="dashboard__table__tbody__tr__td">Adelmito</td>
+                        <td class="dashboard__table__tbody__tr__td">5555</td>
+                        <td class="dashboard__table__tbody__tr__td">GGG-8957</td>
+                    </tr>
+                    <tr class="dashboard__table__tbody__tr">
+                        <td class="dashboard__table__tbody__tr__td">6</td>
+                        <td class="dashboard__table__tbody__tr__td">2485</td>
+                        <td class="dashboard__table__tbody__tr__td">Adelmonster</td>
+                        <td class="dashboard__table__tbody__tr__td">5555</td>
+                        <td class="dashboard__table__tbody__tr__td">JAM-2222</td>
+                    </tr>
+                    <tr class="dashboard__table__tbody__tr">
+                        <td class="dashboard__table__tbody__tr__td">5</td>
+                        <td class="dashboard__table__tbody__tr__td">3752</td>
+                        <td class="dashboard__table__tbody__tr__td">Adelmáximo</td>
+                        <td class="dashboard__table__tbody__tr__td">5555</td>
+                        <td class="dashboard__table__tbody__tr__td">CVV-2345</td>
+                    </tr>
+                    <tr class="dashboard__table__tbody__tr">
+                        <td class="dashboard__table__tbody__tr__td">4</td>
+                        <td class="dashboard__table__tbody__tr__td">5752</td>
+                        <td class="dashboard__table__tbody__tr__td">Adelmilho</td>
+                        <td class="dashboard__table__tbody__tr__td">5555</td>
+                        <td class="dashboard__table__tbody__tr__td">CVM-2245</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+</body>
+
+</html>

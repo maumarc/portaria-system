@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dashboard - Portaria System</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="'width=device-width, initial-scale=1'">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="shortcut icon" href="images/logo.png" />
+    <script src="https://kit.fontawesome.com/67f717a374.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="header__nav">
+            <ul class="header__nav__ul">
+                <li class="header__nav__ul__li">
+                    <a href="index.html" class="header__nav__ul__li__link">Portaria System</a>
+                </li>
+                <li class="header__nav__ul__li">
+                    <input type="text" name="search" placeholder="Search" class="header__nav__ul__li__input">
+                </li>
+                <li class="header__nav__ul__li">
+                    <a href="index.html" class="header__nav__ul__li__link">Sair do Sistema</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="dashboard">
+        <div class="dashboard__sidebar">
+            <small class="dashboard__welcome">Bem vindo(a) Fulano!</small>
+            <nav class="dashboard__sidebar__nav">
+                <ul class="dashboard__sidebar__nav__ul">
+                    <li class="dashboard__sidebar__nav__ul__li">
+                        <a href="" class="dashboard__sidebar__nav__ul__li__link">Dashboard</a>
+                    </li>
+                    <li class="dashboard__sidebar__nav__ul__li">
+                        <a href="" class="dashboard__sidebar__nav__ul__li__link">Novo Contato</a>
+                    </li>
+                    <li class="dashboard__sidebar__nav__ul__li">
+                        <a href="" class="dashboard__sidebar__nav__ul__li__link">Todos os Cadastros</a>
+                    </li>
+                    <li class="dashboard__sidebar__nav__ul__li">
+                        <a href="" class="dashboard__sidebar__nav__ul__li__link">Pesquisar Cadastro</a>
+                    </li>
+                    <li class="dashboard__sidebar__nav__ul__li">
+                        <a href="" class="dashboard__sidebar__nav__ul__li__link">Entrada</a>
+                    </li>
+                    <li class="dashboard__sidebar__nav__ul__li">
+                        <a href="" class="dashboard__sidebar__nav__ul__li__link">Saída</a>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="dashboard__secondList">
+                <ul class="dashboard__secondList__ul">
+                    <li class="dashboard__secondList__ul__li">
+                        <a href="" class="dashboard__secondList__ul__li__link">Relatórios</a>
+                    </li>
+                    <li class="dashboard__secondList__ul__li">
+                        <a href="" class="dashboard__secondList__ul__li__link">Entrada/Saída</a>
+                    </li>
+                    <li class="dashboard__secondList__ul__li">
+                        <a href="" class="dashboard__secondList__ul__li__link">Relatório do Dia</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="container ml-6">
+            <div class="row cadastro">
+                <div class="col-md-12">
+                    <h3 class="cadastro__h3">Cadastrar novo usuário</h3>
+                    <div class="cadastro__form">
+                        <div class="row mt-4">
+                            <div class="col-md-4 cadastro__form__matricula"> <label class="cadastro__form__label"
+                                    for="">Matrícula</label>
+                                <input type="text" placeholder="Informe a matrícula" class="cadastro__form__input">
+                            </div>
+                            <div class="col-md-4 cadastro__form__tipo"> <label class="cadastro__form__label" for="">Tipo de
+                                    Cliente</label>
+                                <input type="text" placeholder="Informe o tipo" class="cadastro__form__input"></div>
+                            <div class="col-md-4 cadastro__form__nome"> <label class="cadastro__form__label" for="">Nome
+                                    Completo</label>
+                                <input type="text" placeholder="Informe o nome" class="cadastro__form__input"></div>
+                        </div>
+
+                        <div class="row mt-4">
+                            <div class="col-md-4 cadastro__form__matricula"> <label class="cadastro__form__label"
+                                    for="">Identidade RG</label>
+                                <input type="text" placeholder="Informe o RG" class="cadastro__form__input">
+                            </div>
+                            <div class="col-md-4 cadastro__form__tipo"> <label class="cadastro__form__label" for="">Placa do Veículo</label>
+                                <input type="text" placeholder="Informe a placa" class="cadastro__form__input"></div>
+                            <div class="col-md-4 cadastro__form__nome"> <label class="cadastro__form__label" for="">Veículo</label>
+                                <input type="text" placeholder="Informe o veículo" class="cadastro__form__input"></div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-md-12">
+                                <button class="cadastro__btnGravar">Gravar</button>
+                                <button class="cadastro__btnCancelar">Cancelar</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
