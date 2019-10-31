@@ -1,15 +1,10 @@
 //MODAL REGISTRAR ENTRADA
 
 function modalRegistrarEntrada(){
-	var register = document.querySelector('.verde');
 	var entrada = document.querySelector('.modalEntrada');
 	
-	register.addEventListener('click', function(){
-		entrada.classList.add('active');
-	})
-	document.querySelector('.modalEntrada__center__h4').addEventListener('click', function(){
-		entrada.classList.remove('active');
-	})
+	entrada.classList.add('active');
+
 	document.querySelector('.modalEntrada__center__h4').addEventListener('click', function(){
 		entrada.classList.remove('active');
 	})
@@ -21,12 +16,10 @@ function modalRegistrarEntrada(){
 
 function modalRegistrarSaida(){
 
-	var leave = document.querySelector('.azul');
 	var saida = document.querySelector('.modalSaida');
 	
-	leave.addEventListener('click', function(){
-		saida.classList.add('active');
-	})
+	saida.classList.add('active');
+
 	
 	document.querySelector('.modalSaida__center__h4').addEventListener('click', function(){
 		saida.classList.remove('active');
@@ -40,12 +33,10 @@ function modalRegistrarSaida(){
 
 function modalApresentarDados(){
 
-	var login = document.querySelector('.login__p__strong');
 	var acessar = document.querySelector('.modalDadosLogin');
 	
-	login.addEventListener('click', function(){
-		acessar.classList.add('active');
-	})
+
+	acessar.classList.add('active');
 	
 	document.querySelector('.modalDadosLogin__center__h4').addEventListener('click', function(){
 		acessar.classList.remove('active');
