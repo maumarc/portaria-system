@@ -36,7 +36,7 @@
                         <a href="#" class="dashboard__sidebar__nav__ul__li__link">Dashboard</a>
                     </li>
                     <li class="dashboard__sidebar__nav__ul__li">
-                        <a href="" class="dashboard__sidebar__nav__ul__li__link">Novo Contato</a>
+                        <a href="cadastro.html" class="dashboard__sidebar__nav__ul__li__link">Novo Contato</a>
                     </li>
                     <li class="dashboard__sidebar__nav__ul__li">
                         <a href="" class="dashboard__sidebar__nav__ul__li__link">Todos os Cadastros</a>
@@ -45,23 +45,23 @@
                         <a href="" class="dashboard__sidebar__nav__ul__li__link">Pesquisar Cadastro</a>
                     </li>
                     <li class="dashboard__sidebar__nav__ul__li">
-                        <a href="" class="dashboard__sidebar__nav__ul__li__link">Entrada</a>
+                        <a href="" onclick="modalRegistrarEntrada();" class="dashboard__sidebar__nav__ul__li__link">Entrada</a>
                     </li>
                     <li class="dashboard__sidebar__nav__ul__li">
-                        <a href="" class="dashboard__sidebar__nav__ul__li__link">Saída</a>
+                        <a href="" onclick="modalRegistrarSaida();" class="dashboard__sidebar__nav__ul__li__link">Saída</a>
                     </li>
                 </ul>
             </nav>
             <nav class="dashboard__secondList">
                 <ul class="dashboard__secondList__ul">
                     <li class="dashboard__secondList__ul__li">
-                        <a href="#" class="dashboard__secondList__ul__li__link">Relatórios</a>
+                        <a href="registros.html" class="dashboard__secondList__ul__li__link">Relatórios</a>
                     </li>
                     <li class="dashboard__secondList__ul__li">
-                        <a href="" class="dashboard__secondList__ul__li__link">Entrada/Saída</a>
+                        <a href="registros.html" class="dashboard__secondList__ul__li__link">Entrada/Saída</a>
                     </li>
                     <li class="dashboard__secondList__ul__li">
-                        <a href="" class="dashboard__secondList__ul__li__link">Relatório do Dia</a>
+                        <a href="registros.html" class="dashboard__secondList__ul__li__link">Relatório do Dia</a>
                     </li>
                 </ul>
             </nav>
@@ -72,10 +72,10 @@
                     <h3 class="dashboard__h3">Entradas/Saídas</h3>
                 </div>
                 <div class="col-md-4 alignCenter">
-                    <button class="dashboard__btn verde">Registrar Entrada</button>
+                    <button onclick="modalRegistrarEntrada()" class="dashboard__btn verde">Registrar Entrada</button>
                 </div>
                 <div class="col-md-4 alignCenter">
-                    <button class="dashboard__btn azul">Registrar Saída</button>
+                    <button onclick="modalRegistrarSaida()" class="dashboard__btn azul">Registrar Saída</button>
                 </div>
                 <div class="col-md-4 alignCenter">
                         <a href="registros.html"><button class="dashboard__btn azulClaro">Entradas/Saídas</button></a>
@@ -109,39 +109,39 @@
                 </thead>
                 <tbody class="dashboard__table__tbody">
                     <tr class="dashboard__table__tbody__tr">
-                        <td class="dashboard__table__tbody__tr__td">8</td>
-                        <td class="dashboard__table__tbody__tr__td">5342</td>
-                        <td class="dashboard__table__tbody__tr__td">Adelmole</td>
-                        <td class="dashboard__table__tbody__tr__td">5555</td>
-                        <td class="dashboard__table__tbody__tr__td">TRY-2424</td>
+                        <td class="dashboard__table__tbody__tr__td">1</td>
+                        <td class="dashboard__table__tbody__tr__td">20191</td>
+                        <td class="dashboard__table__tbody__tr__td">Mau</td>
+                        <td class="dashboard__table__tbody__tr__td">xxx</td>
+                        <td class="dashboard__table__tbody__tr__td">MAU-1000</td>
                     </tr>
                     <tr class="dashboard__table__tbody__tr">
-                        <td class="dashboard__table__tbody__tr__td">7</td>
-                        <td class="dashboard__table__tbody__tr__td">6474</td>
-                        <td class="dashboard__table__tbody__tr__td">Adelmito</td>
-                        <td class="dashboard__table__tbody__tr__td">5555</td>
-                        <td class="dashboard__table__tbody__tr__td">GGG-8957</td>
+                        <td class="dashboard__table__tbody__tr__td">2</td>
+                        <td class="dashboard__table__tbody__tr__td">20192</td>
+                        <td class="dashboard__table__tbody__tr__td">Delmo</td>
+                        <td class="dashboard__table__tbody__tr__td">xxx</td>
+                        <td class="dashboard__table__tbody__tr__td">ADM-1000</td>
                     </tr>
                     <tr class="dashboard__table__tbody__tr">
-                        <td class="dashboard__table__tbody__tr__td">6</td>
-                        <td class="dashboard__table__tbody__tr__td">2485</td>
-                        <td class="dashboard__table__tbody__tr__td">Adelmonster</td>
-                        <td class="dashboard__table__tbody__tr__td">5555</td>
-                        <td class="dashboard__table__tbody__tr__td">JAM-2222</td>
-                    </tr>
-                    <tr class="dashboard__table__tbody__tr">
-                        <td class="dashboard__table__tbody__tr__td">5</td>
-                        <td class="dashboard__table__tbody__tr__td">3752</td>
-                        <td class="dashboard__table__tbody__tr__td">Adelmáximo</td>
-                        <td class="dashboard__table__tbody__tr__td">5555</td>
-                        <td class="dashboard__table__tbody__tr__td">CVV-2345</td>
+                        <td class="dashboard__table__tbody__tr__td">3</td>
+                        <td class="dashboard__table__tbody__tr__td">20193</td>
+                        <td class="dashboard__table__tbody__tr__td">Iago</td>
+                        <td class="dashboard__table__tbody__tr__td">xxx</td>
+                        <td class="dashboard__table__tbody__tr__td">IAG-2424</td>
                     </tr>
                     <tr class="dashboard__table__tbody__tr">
                         <td class="dashboard__table__tbody__tr__td">4</td>
-                        <td class="dashboard__table__tbody__tr__td">5752</td>
-                        <td class="dashboard__table__tbody__tr__td">Adelmilho</td>
-                        <td class="dashboard__table__tbody__tr__td">5555</td>
-                        <td class="dashboard__table__tbody__tr__td">CVM-2245</td>
+                        <td class="dashboard__table__tbody__tr__td">20194</td>
+                        <td class="dashboard__table__tbody__tr__td">Lulu</td>
+                        <td class="dashboard__table__tbody__tr__td">xxx</td>
+                        <td class="dashboard__table__tbody__tr__td">LUC-6969</td>
+                    </tr>
+                    <tr class="dashboard__table__tbody__tr">
+                        <td class="dashboard__table__tbody__tr__td">5</td>
+                        <td class="dashboard__table__tbody__tr__td">20195</td>
+                        <td class="dashboard__table__tbody__tr__td">Caré</td>
+                        <td class="dashboard__table__tbody__tr__td">xxx</td>
+                        <td class="dashboard__table__tbody__tr__td">JAC-1111</td>
                     </tr>
                 </tbody>
             </table>

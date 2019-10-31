@@ -1,52 +1,56 @@
 //MODAL REGISTRAR ENTRADA
 
-var register = document.querySelector('.verde');
-var entrada = document.querySelector('.modalEntrada');
-
-register.addEventListener('click', function(){
-	entrada.classList.add('active');
-})
-document.querySelector('.modalEntrada__center__h4').addEventListener('click', function(){
-	entrada.classList.remove('active');
-})
-document.querySelector('.modalEntrada__center__h4').addEventListener('click', function(){
-	entrada.classList.remove('active');
-})
+function modalRegistrarEntrada(){
+	var register = document.querySelector('.verde');
+	var entrada = document.querySelector('.modalEntrada');
+	
+	register.addEventListener('click', function(){
+		entrada.classList.add('active');
+	})
+	document.querySelector('.modalEntrada__center__h4').addEventListener('click', function(){
+		entrada.classList.remove('active');
+	})
+	document.querySelector('.modalEntrada__center__h4').addEventListener('click', function(){
+		entrada.classList.remove('active');
+	})
+}
 
 //FIM
 
 //MODAL REGISTRAR SAÍDA
 
-var leave = document.querySelector('.azul');
-var saida = document.querySelector('.modalSaida');
+function modalRegistrarSaida(){
 
-leave.addEventListener('click', function(){
-	saida.classList.add('active');
-})
-
-document.querySelector('.modalSaida__center__h4').addEventListener('click', function(){
-	saida.classList.remove('active');
-})
-
+	var leave = document.querySelector('.azul');
+	var saida = document.querySelector('.modalSaida');
+	
+	leave.addEventListener('click', function(){
+		saida.classList.add('active');
+	})
+	
+	document.querySelector('.modalSaida__center__h4').addEventListener('click', function(){
+		saida.classList.remove('active');
+	})
+}
 //FIM -----------------------------------------
-
 
 
 
 //MODAL DADOS DE LOGIN
 
-var login = document.querySelector('.login__p__strong');
-var acessar = document.querySelector('.modalDadosLogin');
+function modalApresentarDados(){
 
-login.addEventListener('click', function(){
-	acessar.classList.add('active');
-})
-
-document.querySelector('.modalDadosLogin__center__h4').addEventListener('click', function(){
-	acessar.classList.remove('active');
-})
-console.log("modallogin");
-
+	var login = document.querySelector('.login__p__strong');
+	var acessar = document.querySelector('.modalDadosLogin');
+	
+	login.addEventListener('click', function(){
+		acessar.classList.add('active');
+	})
+	
+	document.querySelector('.modalDadosLogin__center__h4').addEventListener('click', function(){
+		acessar.classList.remove('active');
+	})
+}
 //FIM -----------------------------------------
 
 
@@ -66,7 +70,6 @@ function logar(){
 		alert("E-mail ou senha inválidos!")
 	}
 }
-
 //FIM -----------------------------------------
 
 
