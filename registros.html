@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dashboard - Portaria System</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="'width=device-width, initial-scale=1'">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="shortcut icon" href="images/logo.png" />
+    <script src="https://kit.fontawesome.com/67f717a374.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="header__nav">
+            <ul class="header__nav__ul">
+                <li class="header__nav__ul__li">
+                    <a href="index.html" class="header__nav__ul__li__a"><img src="images/logo.png" alt=""
+                            class="header__nav__ul__li__a__logo"></a>
+                    <!-- <a href="index.html" class="header__nav__ul__li__link">Portaria System</a> -->
+                </li>
+                <li class="header__nav__ul__li">
+                    <input type="text" name="search" placeholder="Search" class="header__nav__ul__li__input">
+                </li>
+                <li class="header__nav__ul__li">
+                    <a href="index.html" class="header__nav__ul__li__link">Sair do Sistema</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="dashboard">
+        <div class="dashboard__sidebar">
+            <small class="dashboard__welcome">Bem vindo(a) <strong>Fulano!</strong></small>
+            <nav class="dashboard__sidebar__nav">
+                <ul class="dashboard__sidebar__nav__ul">
+                    <li class="dashboard__sidebar__nav__ul__li">
+                        <a href="" class="dashboard__sidebar__nav__ul__li__link">Dashboard</a>
+                    </li>
+                    <li class="dashboard__sidebar__nav__ul__li">
+                        <a href="" class="dashboard__sidebar__nav__ul__li__link">Novo Contato</a>
+                    </li>
+                    <li class="dashboard__sidebar__nav__ul__li">
+                        <a href="" class="dashboard__sidebar__nav__ul__li__link">Todos os Cadastros</a>
+                    </li>
+                    <li class="dashboard__sidebar__nav__ul__li">
+                        <a href="" class="dashboard__sidebar__nav__ul__li__link">Pesquisar Cadastro</a>
+                    </li>
+                    <li class="dashboard__sidebar__nav__ul__li">
+                        <a href="" class="dashboard__sidebar__nav__ul__li__link">Entrada</a>
+                    </li>
+                    <li class="dashboard__sidebar__nav__ul__li">
+                        <a href="" class="dashboard__sidebar__nav__ul__li__link">Saída</a>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="dashboard__secondList">
+                <ul class="dashboard__secondList__ul">
+                    <li class="dashboard__secondList__ul__li">
+                        <a href="" class="dashboard__secondList__ul__li__link">Relatórios</a>
+                    </li>
+                    <li class="dashboard__secondList__ul__li">
+                        <a href="" class="dashboard__secondList__ul__li__link">Entrada/Saída</a>
+                    </li>
+                    <li class="dashboard__secondList__ul__li">
+                        <a href="" class="dashboard__secondList__ul__li__link">Relatório do Dia</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="container ml-6">
+            <div class="row registro">
+                <div class="col-md-12">
+                    <h3 class="cadastro__h3">Histórico de entradas e saídas.</h3>
+                </div>
+                <div class="col-md-12">
+                    <div class="registro__div">
+                        <form action="" class="registro__div__filtroAno">
+                            <select name="#" id="fAno" class="registro__div__filtroAno__select">
+                                <option value="2019">2019</option>
+                                <option value="2018">2018</option>
+                            </select>
+                        </form>
+                    </div>
+                    <div class="registro__cardTable">
+                        <table class="registro__cardTable__table">
+                            <thead class="registro__cardTable__table__thead">
+                                <tr class="registro__cardTable__table__thead__tr">
+                                    <th class="registro__cardTable__table__thead__tr__th">ID</th>
+                                    <th class="registro__cardTable__table__thead__tr__th">Matrícula</th>
+                                    <th class="registro__cardTable__table__thead__tr__th">Nome</th>
+                                    <th class="registro__cardTable__table__thead__tr__th">Identidade</th>
+                                    <th class="registro__cardTable__table__thead__tr__th">Placa</th>
+                                </tr>
+                            </thead>
+                            <tbody class="registro__cardTable__table__tbody">
+                                <tr class="registro__cardTable__table__tbody__tr">
+                                    <td class="registro__cardTable__table__tbody__tr__td">5342</td>
+                                    <td class="registro__cardTable__table__tbody__tr__td">2323</td>
+                                    <td class="registro__cardTable__table__tbody__tr__td">Adelmito</td>
+                                    <td class="registro__cardTable__table__tbody__tr__td">5555</td>
+                                    <td class="registro__cardTable__table__tbody__tr__td">TRY-2424</td>
+                                </tr>
+                                <tr class="registro__cardTable__table__tbody__tr">
+                                    <td class="registro__cardTable__table__tbody__tr__td">5342</td>
+                                    <td class="registro__cardTable__table__tbody__tr__td">2323</td>
+                                    <td class="registro__cardTable__table__tbody__tr__td">Adelmito</td>
+                                    <td class="registro__cardTable__table__tbody__tr__td">5555</td>
+                                    <td class="registro__cardTable__table__tbody__tr__td">TRY-2424</td>
+                                </tr>
+                                <tr class="registro__cardTable__table__tbody__tr">
+                                    <td class="registro__cardTable__table__tbody__tr__td">5342</td>
+                                    <td class="registro__cardTable__table__tbody__tr__td">2323</td>
+                                    <td class="registro__cardTable__table__tbody__tr__td">Adelmito</td>
+                                    <td class="registro__cardTable__table__tbody__tr__td">5555</td>
+                                    <td class="registro__cardTable__table__tbody__tr__td">TRY-2424</td>
+                                </tr>
+                                <tr class="registro__cardTable__table__tbody__tr">
+                                    <td class="registro__cardTable__table__tbody__tr__td">5342</td>
+                                    <td class="registro__cardTable__table__tbody__tr__td">2323</td>
+                                    <td class="registro__cardTable__table__tbody__tr__td">Adelmito</td>
+                                    <td class="registro__cardTable__table__tbody__tr__td">5555</td>
+                                    <td class="registro__cardTable__table__tbody__tr__td">TRY-2424</td>
+                                </tr>
+                                <tr class="registro__cardTable__table__tbody__tr">
+                                    <td class="registro__cardTable__table__tbody__tr__td">5342</td>
+                                    <td class="registro__cardTable__table__tbody__tr__td">2323</td>
+                                    <td class="registro__cardTable__table__tbody__tr__td">Adelmito</td>
+                                    <td class="registro__cardTable__table__tbody__tr__td">5555</td>
+                                    <td class="registro__cardTable__table__tbody__tr__td">TRY-2424</td>
+                                </tr>
+                                <tr class="registro__cardTable__table__tbody__tr">
+                                    <td class="registro__cardTable__table__tbody__tr__td">5342</td>
+                                    <td class="registro__cardTable__table__tbody__tr__td">2323</td>
+                                    <td class="registro__cardTable__table__tbody__tr__td">Adelmito</td>
+                                    <td class="registro__cardTable__table__tbody__tr__td">5555</td>
+                                    <td class="registro__cardTable__table__tbody__tr__td">TRY-2424</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+.registro{
+    &__div{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        &__filtroAno{
+            &__select{
+                width: 70px;
+                height: 30px;
+                background-color: #38ce3c;
+                color: #fff;
+                font-weight: 700;
+                padding: 5px;
+                outline: none;
+                border: none;
+                cursor: pointer;
+            }
+        }
+    }
+    &__cardTable{
+        background-color: #fff;
+        padding: 10px 15px;
+        margin: 20px 0px; 
+        &__table{
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            border-collapse: collapse;
+            &__thead{
+                &__tr{
+                    &__th{
+                        border-bottom: 1px solid #e8ecf1;
+                        padding: 5px 0px;
+                        color: #343a40;
+                        font-size: 15px;
+                    }
+                }
+            }
+            &__tbody{
+                text-align: center;
+                &__tr{
+                    &__td{
+                        border-bottom: 1px solid #e8ecf1;
+                        padding: 10px 0px;
+                        color: #212529;
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -15,7 +15,8 @@
         <nav class="header__nav">
             <ul class="header__nav__ul">
                 <li class="header__nav__ul__li">
-                    <a href="index.html" class="header__nav__ul__li__link">Portaria System</a>
+                    <a href="index.html" class="header__nav__ul__li__a"><img src="images/logo.png" alt="" class="header__nav__ul__li__a__logo"></a>
+                    <!-- <a href="index.html" class="header__nav__ul__li__link">Portaria System</a> -->
                 </li>
                 <li class="header__nav__ul__li">
                     <input type="text" name="search" placeholder="Search" class="header__nav__ul__li__input">
@@ -28,11 +29,11 @@
     </header>
     <section class="dashboard">
         <div class="dashboard__sidebar">
-            <small class="dashboard__welcome">Bem vindo(a) Fulano!</small>
+            <small class="dashboard__welcome">Bem vindo(a) <strong>Fulano!</strong></small>
             <nav class="dashboard__sidebar__nav">
                 <ul class="dashboard__sidebar__nav__ul">
                     <li class="dashboard__sidebar__nav__ul__li">
-                        <a href="" class="dashboard__sidebar__nav__ul__li__link">Dashboard</a>
+                        <a href="#" class="dashboard__sidebar__nav__ul__li__link">Dashboard</a>
                     </li>
                     <li class="dashboard__sidebar__nav__ul__li">
                         <a href="" class="dashboard__sidebar__nav__ul__li__link">Novo Contato</a>
@@ -54,7 +55,7 @@
             <nav class="dashboard__secondList">
                 <ul class="dashboard__secondList__ul">
                     <li class="dashboard__secondList__ul__li">
-                        <a href="" class="dashboard__secondList__ul__li__link">Relatórios</a>
+                        <a href="#" class="dashboard__secondList__ul__li__link">Relatórios</a>
                     </li>
                     <li class="dashboard__secondList__ul__li">
                         <a href="" class="dashboard__secondList__ul__li__link">Entrada/Saída</a>
@@ -77,7 +78,7 @@
                     <button class="dashboard__btn azul">Registrar Saída</button>
                 </div>
                 <div class="col-md-4 alignCenter">
-                    <button class="dashboard__btn azulClaro">Entradas/Saídas</button>
+                        <a href="registros.html"><button class="dashboard__btn azulClaro">Entradas/Saídas</button></a>
                 </div>
             </div>
             <div class="row">
@@ -94,6 +95,7 @@
                     <button class="dashboard__btn azulClaro">Pesquisar Cadastros</button>
                 </div>
             </div>
+            <div class="dashboard__lastUpdates">
             <h4 class="dashboard__h4">Últimos 5 usuários cadastrados.</h4>
             <table class="dashboard__table">
                 <thead class="dashboard__table__thead">
@@ -144,7 +146,37 @@
                 </tbody>
             </table>
         </div>
+        </div>
     </section>
+    <div class="modalEntrada">
+        <div class="modalEntrada__center">
+            <h4 class="modalEntrada__center__h4">X</h4>
+            <h3 class="modalEntrada__center__h3">Digite a placa do veículo:</h3>
+            <form action="" class="modalEntrada__center__form">
+                <input type="text" placeholder="Digite a placa" class="modalEntrada__center__form__input">
+                <input type="text" name="nome" placeholder="Nome" class="modalEntrada__center__form__input">
+                <input type="text" name="RG" placeholder="RG" class="modalEntrada__center__form__input">
+                <input type="datetime-local" name="data" class="modalEntrada__center__form__input">
+                <button class="modalEntrada__center__form__btn">Registrar Entrada</button>
+            </form>
+        </div>
+    </div>
+    <div class="modalSaida">
+        <div class="modalSaida__center">
+            <h4 class="modalSaida__center__h4">X</h4>
+            <h3 class="modalSaida__center__h3">Digite a placa do veículo:</h3>
+            <form action="" class="modalSaida__center__form">
+                <input type="text" placeholder="Digite a placa" class="modalSaida__center__form__input">
+                <input type="text" name="nome" placeholder="Nome" class="modalSaida__center__form__input">
+                <input type="text" name="RG" placeholder="RG" class="modalSaida__center__form__input">
+                <input type="datetime-local" name="data" class="modalSaida__center__form__input">
+                <button class="modalSaida__center__form__btn">Registrar Saída</button>
+            </form>
+        </div>
+    </div>
 </body>
+
+<script src="./js/main.js"></script>
+<script src="./js/jquery-3.3.1.min.js"></script>
 
 </html>

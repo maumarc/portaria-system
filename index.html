@@ -7,7 +7,6 @@
     <!-- <meta name="viewport" content="'width=device-width, initial-scale=1'"> -->
     <link rel="stylesheet" type="text/css" href="./style.css">
     <link rel="shortcut icon" href="images/logo.png" />
-    <script src="https://kit.fontawesome.com/67f717a374.js"></script>
 </head>
 
 <body>
@@ -19,16 +18,24 @@
                     <a href="" class="login__link"><img src="images/logo.png" alt="" class="login__link__img"></a>
                     <h2 class="login__h2">Portaria System</h2>
                     <form action="" class="login__form">
-                        <input type="text" placeholder="Nome" name="name" class="login__form__input">
-                        <input type="email" placeholder="E-mail" name="email" class="login__form__input">
-                        <a href="dashboard.html" class="login__form__link">Acessar</a>
+                        <input type="email" placeholder="E-mail" id="loginEmail" name="email" class="login__form__input">
+                        <input type="password" placeholder="Senha" id="loginSenha" name="password" class="login__form__input">
+                        <a onclick="logar()" class="login__form__link">Acessar</a>
                     </form>
                     <small class="login__small">2019 - Todos os direitos reservados</small>
+                    <p class="login__p"><strong class="login__p__strong">Clique aqui</strong> para ver os dados de acesso!</p>
                 </div>
             </div>
 
         </div>
     </section>
+    <div class="modalDadosLogin">
+            <div class="modalDadosLogin__center">
+                <h4 class="modalDadosLogin__center__h4">X</h4>
+                <h3 class="modalDadosLogin__center__h3"><strong>E-mail:</strong> admin@admin.com</h3>
+                <h3 class="modalDadosLogin__center__h3"><strong>Senha:</strong> admin</h3>
+            </div>
+    </div>
 </body>
 
 
